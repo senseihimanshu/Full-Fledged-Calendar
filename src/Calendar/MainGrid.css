@@ -1,0 +1,8 @@
+.active{
+    color: #28b485!important;
+    font-weight: 700;
+}
+
+.empty{
+    visibility: hidden;
+}

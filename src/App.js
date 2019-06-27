@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Header from './Calendar/Header';
+import Events from './Calendar/Events';
+import MainHeader from './Calendar/MainHeader';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="container">
+      <header className="header">
+        <Header />
+        <Events />
       </header>
+
+      <main>
+        <MainHeader />
+      </main>
     </div>
   );
 }
