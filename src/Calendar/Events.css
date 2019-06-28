@@ -1,0 +1,33 @@
+.events__create-event-time {
+  position: absolute;
+  top: 0;
+  right: 20%;
+  height: 100%;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  border: none;
+  font-size: 1.8rem;
+  transition: all 0.4s;
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  font-size: 3.5rem;
+  position: absolute;
+  top: 0rem;
+  right: 7.0rem;
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 1rem .5rem;
+  border: 0;
+}
+
+button:active{
+    outline: 1px solid #55c57a;
+}
+
+button:hover {
+  color: #55c57a;
+}

@@ -32,7 +32,7 @@ class MainHeader extends Component{
 
                     </div>
                 </section>
-                <MainGrid currentYear={this.state.year}/>
+                <MainGrid currentYear={this.state.year} changeSelected={this.props.changeSelected} reminders={this.props.reminders}/>
             </div>
         );
     }

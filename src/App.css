@@ -89,7 +89,7 @@ body {
       background-color: rgba(255, 255, 255, 0.6);
       color: inherit;
       padding: 2rem;
-      padding-right: 7rem;
+      padding-right: 14rem;
       width: 90%;
       font-family: inherit;
       border: none;
@@ -98,7 +98,7 @@ body {
       .events__create-event-input:focus {
         outline: none;
         background-color: rgba(255, 255, 255, 0.8); }
-    .events__create-event-icon {
+    /* .events__create-event-icon {
       background-color: transparent;
       font-size: 3.5rem;
       position: absolute;
@@ -107,7 +107,7 @@ body {
       cursor: pointer;
       transition: color .3s; }
       .events__create-event-icon:hover {
-        color: #55c57a; }
+        color: #55c57a; } */
 
 .row {
   max-width: 114rem;

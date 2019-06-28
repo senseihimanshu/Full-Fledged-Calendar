@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+
 import "./MainGrid.css";
 import Date from "./Date";
+
 import moment from "moment";
 
 class MainGrid extends Component {
@@ -12,6 +14,8 @@ class MainGrid extends Component {
     };
 
     this.datesArr = [[], [], [], [], [], []];
+
+    this.update = this.update.bind(this);
   }
 
   componentWillMount() {
@@ -66,6 +70,7 @@ class MainGrid extends Component {
       }
     }
   }
+
 
   render() {
     this.update();
@@ -197,16 +202,18 @@ class MainGrid extends Component {
                 <td className="col-1-of-7">Fri</td>
                 <td className="col-1-of-7">Sat</td>
               </tr>
-
-              <Date datesArr={this.datesArr[0]} />
-              <Date datesArr={this.datesArr[1]} />
-              <Date datesArr={this.datesArr[2]} />
-              <Date datesArr={this.datesArr[3]} />
-              <Date datesArr={this.datesArr[4]} />
-              <Date datesArr={this.datesArr[5]} />
+              
+              <Date datesArr={this.datesArr[0]} changeSelected={this.props.changeSelected} month={this.state.month} year={this.props.currentYear} reminders={this.props.reminders}/>
+              <Date datesArr={this.datesArr[1]} changeSelected={this.props.changeSelected} month={this.state.month} year={this.props.currentYear} reminders={this.props.reminders}/>
+              <Date datesArr={this.datesArr[2]} changeSelected={this.props.changeSelected} month={this.state.month} year={this.props.currentYear} reminders={this.props.reminders}/>
+              <Date datesArr={this.datesArr[3]} changeSelected={this.props.changeSelected} month={this.state.month} year={this.props.currentYear} reminders={this.props.reminders}/>
+              <Date datesArr={this.datesArr[4]} changeSelected={this.props.changeSelected} month={this.state.month} year={this.props.currentYear} reminders={this.props.reminders}/>
+              <Date datesArr={this.datesArr[5]} changeSelected={this.props.changeSelected} month={this.state.month} year={this.props.currentYear} reminders={this.props.reminders}/>
             </tbody>
           </table>
+
         </div>
+
       </section>
     );
   }
